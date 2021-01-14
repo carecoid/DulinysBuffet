@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: darksalmon;
+    color: azure;
+    font-size: 16px;
+    text-align: center;
+    max-width: 1028px;
+    margin: auto;
+    padding: 10px;
+}
+
+#coverHeader {
+    background-image: url(../images/freepics-wedding2.jpg);
+    background-size: contain;
+    overflow: hidden;
+    height: 100px;
+    max-width: 1028px;
+    margin-bottom: 10px;
+}
+
+.mainMenu {
+    padding: 10px 12px;
+    list-style-type:none;
+    display: inline-block;
+}
+
+.mainMenu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainMenu:hover{
+    background-color: whitesmoke;
+    color: lightcoral;
+}
+
+.mainMenu:active{
+    background-color: whitesmoke;
+    color: lightcoral;
+}
+
+section{
+    background-color: darksalmon;
+    max-width: 1028px;
+    margin: auto;
+    padding: 10px;
+}
+
+.nonode {
+    font-size: 0px;
+    overflow: hidden;
+}
+
+.container-pt1{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#img-pt1{
+    width: 50%;
+    max-width: 350px;
+    object-fit: contain;
+}
+
+#text-pt1{
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.container-pt2 {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-pt2 img{
+    float: left;
+    margin: 5px;
+    width: 33%;
+    /* object-fit: cover; */
+}
+
+.container-table{
+    font-size: 0;
+    display: table;
+    overflow: hidden;
+}
+
+.table-cell {
+    width: calc(100%/4);
+    background-color: #FFC2CE;
+    display: table-cell;
+    color: azure;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px 10px 40px 10px;
+}
+
+.table-cell p{
+    margin-top: 10px;
+}
+
+.bg-cell2 {
+    background-color: #FD6E8A;
+}
+
+.bg-cell3{
+    background-color: #FFC2CE;
+}
+
+.bg-cell4{
+    background-color: #FD6E8A;
+}
+
+
+@media screen and (max-width: 500px){
+    #text-pt1{
+        padding: 0px 3px 0px 3px;
+    }
+
+    .container-pt2{
+        display: block;
+        text-align: center;
+    }  
+
+    .container-pt2 img{
+        width: 80%;
+        float: none;
+        margin: 5px auto;
+    }
+
+    .table-cell{
+        width: 48%;
+        padding: 20px 2px;
+        font-size: 0.8rem;
+        float: left;
+    }
+
+    .table-cell img{
+        height: 50px;
+    }
+
+    .bg-cell3{
+        background-color: #FD6E8A;
+    }
+
+    .bg-cell4{
+        background-color: #FFC2CE;
+    }
+}
